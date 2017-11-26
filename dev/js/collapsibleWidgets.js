@@ -15,7 +15,7 @@
 
     /* Add buttons to the widgets */
     var closeLink = $( '<a href="#" class="ipsPos_right toggleWidgetLink" data-action="toggleWidget" _title="' + ips.getString('toggle_this_widget') + '" data-ipsTooltip></a>' );
-    $( '.ipsWidget .ipsWidget_title' ).append( closeLink );
+    $( '.ipsWidget' ).not( '.cProfileSidebarBlock' ).find( '.ipsWidget_title' ).append( closeLink );
 
     /* Handle button click (toggle widget) */
     $( '[data-action=toggleWidget]' ).click( function (e) {

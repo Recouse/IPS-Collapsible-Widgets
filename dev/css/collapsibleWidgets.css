@@ -1,0 +1,24 @@
+.toggleWidgetLink {
+    opacity: 0.2;
+    transition: 0.3s all linear;
+    width: 20px;
+    height: 20px;
+}
+
+    .toggleWidgetLink:hover {
+        opacity: 1;
+        color: #828e99;
+    }
+
+    .toggleWidgetLink:after {
+        content: "\f078";
+        font-family: "FontAwesome";
+        font-size: 18px;
+    }
+
+    .ipsWidget_hidden .toggleWidgetLink:after {
+        content: "\f053";
+    }
+    html[dir="rtl"] .ipsWidget_hidden .toggleWidgetLink:after {
+        content: "\f054";
+    }
